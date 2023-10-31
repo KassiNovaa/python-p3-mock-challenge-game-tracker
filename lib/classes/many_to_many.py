@@ -18,7 +18,7 @@ class Game:
     
     @property
     def players(self):
-        return list ({ results.game for results in self.results })
+        return list ({ results.player for results in self.results })
 
     def average_score(self, player):
         if player in self.players:
